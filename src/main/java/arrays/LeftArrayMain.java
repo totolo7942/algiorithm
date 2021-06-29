@@ -24,7 +24,7 @@ public class LeftArrayMain {
 		  System.out.println(strResult);
 	}
 
-	public static List<Integer> rotLeft(List<Integer> a, int d) {
+	static List<Integer> rotLeft(List<Integer> a, int d) {
 		List<Integer> l1 = a;
 
 		int tmp = 0;
@@ -44,20 +44,20 @@ public class LeftArrayMain {
 		return l1;
 	}
 
-	public static List<Integer> rotLeftArrayCopy(List<Integer> a, int d) {
+	static List<Integer> rotLeftArrayCopy(List<Integer> a, int d) {
 
-		List<Integer> tmp = new ArrayList<>();
+		List<Integer> tmp = Arrays.asList(0,0,0,0,0);
 		int n = a.size();
 
 		for( int oldIndex = 0; oldIndex < n; oldIndex ++) {
 			int newIndex = (oldIndex + n - d ) % n;
-			tmp.add(a.get(newIndex));
+			tmp.set(newIndex, a.get(oldIndex));
 		}
 
 		return tmp;
 	}
 
-	public static int[] rotLeft2(int[] a, int d) {
+	static int[] rotLeft2(int[] a, int d) {
 		int n = a.length;
 		int[] rotArray = new int[n];
 
