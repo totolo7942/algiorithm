@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 public class LeftArrayMain {
 
 	//		print , input 5, 4 / result : 5 1 2 3 4
+	//https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays
 	public static void main(String[] args) {
 		List<Integer> items = Arrays.asList(1, 2, 3, 4, 5);
 		int d = 4;
