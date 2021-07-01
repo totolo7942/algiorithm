@@ -11,11 +11,11 @@ public class ReverseArrayList {
 	public static void main(String[] args) {
 		List<Integer> arr = Arrays.asList(1,4,3,2);
 
-//		List<Integer> result = reverArray(arr, arr.size());
-//		Print.printValue(result, " ");
+		List<Integer> result = reverArray(arr, arr.size());
+		Print.printValue(result, " ");
 
 		List<String> strArr = Arrays.asList("Ashish","Yadav ","Abhishek","Rajput","Sunil","Pundir","Prem");
-		Print.printStrValue(reverseStrArray(strArr), " ");
+		Print.printValue(reverseStrArray(strArr), " ");
 
 	}
 
