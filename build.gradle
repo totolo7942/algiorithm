@@ -68,6 +68,7 @@ dependencies {
     //HystrixCommand Depandency
     implementation 'io.reactivex.rxjava2:rxjava:2.2.2'
     implementation 'io.reactivex:rxjava:1.2.5'
+    implementation 'com.google.code.gson:gson:2.8.8'
 }
 
 test {
@@ -86,6 +87,5 @@ wrapper {
 }
 
 tasks.withType(JavaCompile) {
-    options.compilerArgs += ['-Xmx6g']
     options.encoding = 'UTF-8'
 }
