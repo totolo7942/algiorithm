@@ -37,7 +37,6 @@ public class StreamArrayExample {
                     paramBO.setV1(queryParameters[0]);
                     paramBO.setV2(queryParameters[1]);
                     paramBO.setV3(queryParameters[2]);
-                    paramBO.setV4(queryParameters[3]);
                     return paramBO;
                 }
         );

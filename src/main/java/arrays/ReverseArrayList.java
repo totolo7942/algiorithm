@@ -19,6 +19,7 @@ public class ReverseArrayList {
 
 	}
 
+
 	static List<Integer> reverArray(List<Integer> items, int N) {
 			List<Integer> revArray = new ArrayList<>();
 			for( int idx = items.size()-1; idx >= 0 ; idx --) {
@@ -27,8 +28,8 @@ public class ReverseArrayList {
 
 			return revArray;
 	}
-	static List<String> reverseStrArray(List<String> items){
 
+	static List<String> reverseStrArray(List<String> items){
 		List<String> ret = new ArrayList<>();
 		for(String item : items) {
 
