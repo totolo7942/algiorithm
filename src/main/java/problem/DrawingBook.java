@@ -1,7 +1,5 @@
 package problem;
 
-import java.util.*;
-
 //https://www.hackerrank.com/challenges/drawing-book/problem
 public class DrawingBook {
 
@@ -18,7 +16,7 @@ public class DrawingBook {
 
 	public static void main(String[] args) {
 		int n = 5;
-		int p = 4;
+		int p = 3;
 
 		int result = solution(n, p);
 		System.out.println(result);
