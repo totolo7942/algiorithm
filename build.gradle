@@ -86,6 +86,5 @@ wrapper {
 }
 
 tasks.withType(JavaCompile) {
-    options.compilerArgs += ['-Xmx6g']
     options.encoding = 'UTF-8'
 }
