@@ -47,6 +47,20 @@ public class ReverseWords {
                 .collect(Collectors.joining(" "));
     }
 
+    public static String reverseWords3(final String original) {
+        String[] array = original.split(" ");
+        if(array.length == 0)
+            return original;
+
+        int i = 0;
+        for(String string : array){
+            array[i] = new StringBuilder(string).reverse().toString();
+            i++;
+        }
+
+        return String.join(" ",array);
+    }
+
     //https://www.codewars.com/kata/5259b20d6021e9e14c0010d4/solutions/java/all/best_practices
     public static void main(String[] args) {
         String ret = reverseWords("a b c d e");
