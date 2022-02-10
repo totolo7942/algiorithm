@@ -6,8 +6,6 @@ import java.util.stream.Stream;
 
 public class ReverseWords {
     public static String reverseWords(final String original) {
-        // Have at it
-
         if(original.isBlank())
             return original;
 
