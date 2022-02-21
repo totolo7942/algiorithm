@@ -13,8 +13,14 @@ dependencyManagement {
     }
 }
 
-sourceCompatibility = JavaVersion.VERSION_11
-targetCompatibility = sourceCompatibility
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
+//sourceCompatibility = JavaVersion.VERSION_17
+//targetCompatibility = sourceCompatibility
 
 group 'org.example'
 version '1.0-SNAPSHOT'
@@ -24,7 +30,6 @@ repositories {
 }
 
 dependencies {
-    testCompile 'org.assertj:assertj-core:3.11.1'
     testCompile 'org.hamcrest:hamcrest-all:1.3'
     testCompile 'org.mockito:mockito-all:1.9.5'
     //--Dependency Junit-Test

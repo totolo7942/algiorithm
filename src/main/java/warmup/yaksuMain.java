@@ -7,11 +7,12 @@ public class yaksuMain {
         //약수를 구하는 알고리즘
         for(int i=1; i<= n ; i ++) {
             if( n % i == 0) {
+                System.out.println(i);
                 answer +=i;
             }
         }
 
-        System.out.println(answer);
+        System.out.println("result " + answer);
     }
 
     public static void stringToInt(String s) {
